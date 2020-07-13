@@ -1,9 +1,33 @@
-@mixin buttons($color) {
-    padding: 10px 20px;
-    background-color: $color;
-    color: white;
-    font-size: 13px;
-    border: none;
+// FONT SIZE
+@mixin font-size($font-size-value) {
+    font-size: $font-size-value;
+    color: $primary-color;
+}
+
+// FONT STYLE
+// @mixin font-style() {
+//     text-align: center;
+//     letter-spacing: 1px;
+// }
+
+// BUTTONS
+
+@mixin button-one() {
+    color: $background-color;
+    background-color: $secondary-color;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 2px;
     text-decoration: none;
-    display: inline-block;
+    padding: 10px;
+}
+
+@mixin button-two() {
+    color: $primary-color;
+    background-color: $background-color;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding: 10px;
 }
