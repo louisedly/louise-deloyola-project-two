@@ -1,12 +1,12 @@
 @import 'setup';
 @import 'variable';
 @import 'mixins';
+
+@import 'global';
+@import 'typography';
+@import 'buttons';
+
 @import 'header';
 @import 'nav';
 @import 'main';
 @import 'footer';
-
-h1 {
-    background: gold;
-}
-

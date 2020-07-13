@@ -1,3 +1,56 @@
-main {
-    background-color: red;
+// SECTIONS
+
+// intro
+.intro {
+    background-color: $background-color;
+    padding: 100px 200px;
+}
+
+.new-additions-container,
+.meet-real-nemo-container {
+    background-color: $secondary-background-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-image-container img,
+.right-image-container img {
+    width: 530px;
+    height: 400px;
+}
+
+.left-image-container img {
+    box-shadow: 25px 25px 0 0 $secondary-color;
+    position: relative;
+    top: -25px;
+}
+
+.right-image-container img {
+    box-shadow:  -25px 25px 0 0 $secondary-color;
+    position: relative;
+    bottom: -10px;
+}
+
+.new-additions,
+.meet-real-nemo {
+    padding: 100px 200px;
+}
+
+.left-image-container,
+.right-image-container {
+    position: relative;
+
+}
+
+.new-additions {
+
+}
+
+.meet-real-nemo {
+    text-align: right;
+}
+
+.links  {
+    background: $background-color;
 }

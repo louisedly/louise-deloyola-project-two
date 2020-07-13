@@ -1,13 +1,52 @@
-// Header
+// HEADER STYLES
 
-h1 {
-    color: $headerColor;
+header {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-button {
-    @include buttons(salmon);
+span {
+    display: flex;
+    flex-direction: column;
 }
 
-// a {
-//     @include buttons();
-// }
+.header-title {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-goldfish {
+    border: 8px $secondary-color;
+    position: absolute;
+    right: 0;
+    top: 180px;
+    width: 650px;
+    height: 550px;
+}
+
+.header-image img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-header {
+    background: url("../assets/header-image.jpg");
+}
+
+// HEADER FLEX
+
+.header-flex-container {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+

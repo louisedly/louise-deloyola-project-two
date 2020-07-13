@@ -1,1 +1,64 @@
 // TYPOGRAPHY STYLES
+
+html {
+    font-style: $base-font;
+    @include font-size(62.5%);
+}
+
+h1,
+h2,
+h3,
+h4,
+.header-nav,
+.intro a,
+.new-additions a,
+.meet-real-nemo a {
+    font-family: $base-font;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: $body-font;
+    font-size: 2rem;
+    line-height: 32px;
+}
+
+h1 {
+    @include font-size(13.8rem);
+    line-height: 126px;
+}
+
+h2 {
+    @include font-size(8rem);
+    line-height: 92px;
+}
+
+h3 {
+    @include font-size(4.2rem);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h4 {
+    @include font-size(3.2rem);
+    letter-spacing: 1px;
+}
+
+.header-nav {
+    @include font-size(2rem);
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li { 
+	text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: $primary-color;
+}
