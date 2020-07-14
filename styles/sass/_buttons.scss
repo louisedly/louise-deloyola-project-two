@@ -1,10 +1,19 @@
 // FIND OUT MORE BUTTON
-.intro a {
+.intro a,
+.this-month a {
     @include button-one();
 }
 
 // READ MORE BUTTON
 
-.new-additions a {
+.new-additions a,
+.meet-real-nemo a {
     @include button-two();
+}
+
+// ICONS
+
+i {
+    border-radius: 50%;
+    background-color: $secondary-color;
 }

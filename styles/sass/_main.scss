@@ -4,20 +4,25 @@
 .intro {
     background-color: $background-color;
     padding: 100px 200px;
+    text-align: center;
 }
 
+.intro p {
+    text-align: left;
+}
+
+// second section
 .new-additions-container,
 .meet-real-nemo-container {
     background-color: $secondary-background-color;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .left-image-container img,
 .right-image-container img {
-    width: 530px;
-    height: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .left-image-container img {
@@ -34,23 +39,107 @@
 
 .new-additions,
 .meet-real-nemo {
-    padding: 100px 200px;
-}
-
-.left-image-container,
-.right-image-container {
-    position: relative;
-
+    padding: 50px;
+    width: 60%;
 }
 
 .new-additions {
-
+    padding-left: 100px;
 }
 
 .meet-real-nemo {
+    padding-right: 100px;
     text-align: right;
 }
 
-.links  {
+// third section
+.icon-links {
     background: $background-color;
+    padding: 50px;
+}
+
+.icon-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon-links li {
+    width: calc((100% / 3) - 30px);
+    margin: 0 auto;
+    padding: 10px;
+    min-width: 450px;
+    text-align: left;
+}
+
+.locations,
+.blog,
+.community,
+.get-in-touch {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.locations i,
+.blog i,
+.community i,
+.get-in-touch i {
+    height: 100%;
+    padding: 10px;
+}
+
+.locations h4,
+.blog h4,
+.community h4,
+.get-in-touch h4 {
+    padding-left: 10px;
+    margin: 0;
+}
+
+// fourth section
+.banner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+// fifth section
+.this-month {
+    background-color: $background-color;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.this-month img {
+    width: calc(30% / 40px);
+    margin: 40px;
+    box-shadow:  30px 30px 0 0 $secondary-color;
+}
+
+.this-month-description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+// sixth section
+.gallery {
+    background: $secondary-background-color;
+}
+
+.gallery ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.gallery li {
+    width: calc(100%/3) - 40px;
+    padding: 40px 20px;
+}
+
+.gallery img {
+    width: 300px;
 }

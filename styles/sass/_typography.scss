@@ -12,7 +12,8 @@ h4,
 .header-nav,
 .intro a,
 .new-additions a,
-.meet-real-nemo a {
+.meet-real-nemo a,
+.this-month a {
     font-family: $base-font;
     text-transform: uppercase;
 }
@@ -61,4 +62,9 @@ li {
 nav a {
     text-decoration: none;
     color: $primary-color;
+}
+
+i {
+    color: $background-color;
+    font-size: 2.5rem;
 }
