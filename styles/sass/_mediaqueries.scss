@@ -1,0 +1,49 @@
+// Widescreen laptops
+@media (min-width: 1280px) and (max-width: 1600px){
+    .hamburger-nav {
+    display: none;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 1280px){
+    .hamburger-nav {
+    display: none;
+    }
+}
+
+// Mobile screens
+@media (max-width: 320px){
+
+    html {
+        font-size: 30%;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .hamburger-nav  {
+        display: inline-block;
+        font-size: 6.0rem;
+        font-weight: lighter;
+    }
+
+    .header-image img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .intro {
+        padding: 0;
+    }
+
+    h1 {
+        @include font-size(10.5rem);
+        line-height: 80px;
+    }
+
+    body {
+        font-size: 2.5rem;
+    }
+
+}
