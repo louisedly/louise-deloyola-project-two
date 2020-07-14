@@ -18,9 +18,16 @@
     background-color: $secondary-color;
 }
 
-button {
+// FORM BUTTONS
+
+.form button {
     color: $primary-color;
     background-color: $secondary-background-color;
+}
+
+.contact button {
+    color: $primary-color;
+    background-color: $background-color;
 }
 
 // SOCIAL MEDIA ICONS
