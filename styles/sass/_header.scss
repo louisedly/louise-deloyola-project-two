@@ -1,7 +1,8 @@
 // HEADER STYLES
 
+// INDEX HEADER
 header {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,7 +45,29 @@ span {
     width: 100%;
 }
 
-// HEADER FLEX
+// BLOG HEADER
 
+.blog-header {
+    background: url("../assets/blog-header.jpg");
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.blog-section img {
+
+}
+
+// CONTACT HEADER
+
+.contact-header {
+    background: url("../assets/contact-header.jpg");
+    height: 70vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 

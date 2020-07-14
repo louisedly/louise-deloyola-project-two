@@ -11,9 +11,21 @@
     @include button-two();
 }
 
-// ICONS
+// ICON LINKS
 
-i {
+.icon-links i {
     border-radius: 50%;
     background-color: $secondary-color;
+}
+
+button {
+    color: $primary-color;
+    background-color: $secondary-background-color;
+}
+
+// SOCIAL MEDIA ICONS
+
+.social-icons li {
+    display: inline;
+    padding: 0 10px;
 }

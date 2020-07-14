@@ -7,3 +7,18 @@
 }
 
 // BACKGROUND COLORS
+
+.intro,
+.this-month,
+.blog-flex-container,
+.form,
+.contact-aside {
+    background-color: $background-color;
+}
+
+.new-additions-container,
+.meet-real-nemo-container,
+.gallery,
+.blog-aside-info {
+    background-color: $secondary-background-color;
+}
