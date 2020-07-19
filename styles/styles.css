@@ -880,14 +880,14 @@ button {
   .header-image img {
     display: none;
   }
+  .intro {
+    padding: 100px;
+  }
 }
 
 @media (max-width: 872px) {
   .header-title {
     padding: 10px;
-  }
-  .intro {
-    padding: 100px;
   }
   .new-additions-container,
   .meet-real-nemo-container {
@@ -918,7 +918,7 @@ button {
     width: 100%;
   }
   .icon-links {
-    padding: 0;
+    padding: 10px;
   }
   .this-month-description {
     width: auto;
@@ -926,6 +926,9 @@ button {
   .gallery li {
     padding: 0;
     margin: 0 auto;
+  }
+  .gallery img {
+    padding: 10px;
   }
 }
 
@@ -952,8 +955,14 @@ button {
   html {
     font-size: 40%;
   }
+  .icon-links {
+    padding: 10px;
+  }
+  .icon-links ul {
+    padding: 0;
+  }
   .icon-links li {
-    min-width: 320px;
+    min-width: 300px;
   }
 }
 
@@ -972,19 +981,74 @@ button {
     color: #FFFFFF;
     line-height: 80px;
   }
-  .icon-links {
-    padding: 10px;
-  }
-  .icon-links ul {
-    padding: 0;
-  }
-  .icon-links li {
-    min-width: 300px;
-  }
   .gallery img {
-    width: 100px;
+    width: 80px;
+    padding: 10px 0;
   }
   body {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1126px) {
+  .blog-section,
+  .blog-aside {
+    width: 50%;
+  }
+}
+
+@media (max-width: 890px) {
+  .blog-section,
+  .blog-aside {
+    width: 100%;
+  }
+  .blog-flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-section {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .blog-nav {
+    display: none;
+  }
+  .hamburger-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 6.0rem;
+    font-weight: lighter;
+  }
+  .form p,
+  .contact p {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 424px) {
+  .blog-aside-info img {
+    width: 80%;
+    height: auto;
+  }
+  .blog-aside-info {
+    padding-top: 200px;
+  }
+  .form p,
+  .contact p {
+    padding: 10px;
   }
 }
