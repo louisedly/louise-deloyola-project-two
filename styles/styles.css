@@ -424,6 +424,8 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-image {
@@ -914,24 +916,14 @@ button {
     padding: 0;
     width: 100%;
   }
-  .icon-links ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .icon-links li {
-    width: 50%;
+  .icon-links {
+    padding: 0;
   }
   .this-month-description {
     width: auto;
   }
   .gallery li {
-    padding: 10px;
+    padding: 0;
     margin: 0 auto;
   }
 }
@@ -955,21 +947,21 @@ button {
   }
 }
 
+@media (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+  .icon-links li {
+    min-width: 320px;
+  }
+}
+
 @media (max-width: 320px) {
   html {
     font-size: 30%;
   }
-  .header-nav {
-    display: none;
-  }
-  .hamburger-nav {
-    display: inline-block;
-    font-size: 6.0rem;
-    font-weight: lighter;
-  }
-  .header-image img {
-    width: 250px;
-    height: 200px;
+  header {
+    height: 70vh;
   }
   .intro {
     padding: 0;
@@ -978,6 +970,18 @@ button {
     font-size: 10.5rem;
     color: #FFFFFF;
     line-height: 80px;
+  }
+  .icon-links {
+    padding: 10px;
+  }
+  .icon-links ul {
+    padding: 0;
+  }
+  .icon-links li {
+    min-width: 300px;
+  }
+  .gallery img {
+    width: 100px;
   }
   body {
     font-size: 2.5rem;

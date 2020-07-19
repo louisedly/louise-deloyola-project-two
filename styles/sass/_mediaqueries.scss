@@ -1,3 +1,5 @@
+// INDEX MEDIA QUERY
+
 // Widescreen laptops
 @media (min-width: 1280px) and (max-width: 1600px){
     .hamburger-nav {
@@ -62,14 +64,8 @@
         width: 100%;
     }
 
-    .icon-links ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .icon-links li {
-        width: 50%;
+    .icon-links {
+        padding: 0;
     }
 
     .this-month-description {
@@ -77,13 +73,14 @@
     }
 
     .gallery li {
-        padding: 10px;
+        padding: 0;
         margin: 0 auto;
     }
     
 }
 
 @media (max-width: 700px){
+
     .header-nav {
         display: none;
     }
@@ -98,6 +95,22 @@
     .intro {
     padding: 60px 10px;
     }
+
+    .second-section {
+        
+    }
+}
+
+@media (max-width: 500px){
+
+    html {
+        font-size: 40%;
+    }  
+
+    .icon-links li {
+        min-width: 320px;
+    }
+
 }
 
 // Mobile screens
@@ -105,22 +118,12 @@
 
     html {
         font-size: 30%;
+    }  
+
+    header {
+        height: 70vh;
     }
 
-    .header-nav {
-        display: none;
-    }
-
-    .hamburger-nav  {
-        display: inline-block;
-        font-size: 6.0rem;
-        font-weight: lighter;
-    }
-
-    .header-image img {
-        width: 250px;
-        height: 200px;
-    }
 
     .intro {
         padding: 0;
@@ -129,6 +132,21 @@
     h1 {
         @include font-size(10.5rem);
         line-height: 80px;
+    }
+
+    .icon-links {
+        padding: 10px;
+    }
+    .icon-links ul {
+        padding: 0;
+    }
+
+    .icon-links li {
+        min-width: 300px;
+    }
+
+    .gallery img {
+        width: 100px;
     }
 
     body {
