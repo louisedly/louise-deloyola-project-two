@@ -30,7 +30,7 @@ span {
 
 .header-image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .header-image img {
@@ -38,7 +38,8 @@ span {
     width: 100%;
     height: 550px;
     position: relative;
-    bottom: -100px;
+    top: 80px;
+    right: 0;
 }
 
 .index-header {
